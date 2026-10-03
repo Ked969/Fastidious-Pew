@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 6. Ay! ❤️ </title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #f8bbd0; font-family: 'Poppins', sans-serif; color: #4a4a4a; padding: 20px; }
+        header { text-align: center; padding: 40px 0; }
+        header h1 { color: #d63031; font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; color: #7f8c8d; }
+        
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        
+        .polaroid { 
+            background: #ffffff; 
+            padding: 15px 15px 25px 15px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+            transition: all 0.3s ease; 
+            border-radius: 4px;
+        }
+        
+        .polaroid:nth-child(4n+1) { transform: rotate(-2deg); }
+        .polaroid:nth-child(4n+2) { transform: rotate(3deg); }
+        .polaroid:nth-child(4n+3) { transform: rotate(-1.5deg); }
+        .polaroid:nth-child(4n+4) { transform: rotate(2deg); }
+        
+        .polaroid:hover { 
+            transform: scale(1.05) rotate(0deg); 
+            box-shadow: 0 15px 35px rgba(214, 48, 49, 0.2); 
+            z-index: 10; 
+        }
+        
+        .polaroid img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 2px;
+        }
+        
+        .caption { 
+            padding-top: 15px; 
+            font-family: 'Caveat', cursive; 
+            color: #2d3436; 
+            font-size: 1.5rem; 
+            text-align: center;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>6. Ayımız Kutlu Olsun Sevgilim! </h1>
+        <p> </p>
+    </header>
+
+    <div class="gallery">
+        
+        <div class="polaroid">
+            <img src="photos/IMG-20260413-WA0030.jpg" alt="">
+            <div class="caption"> Otebisss </div>
+        </div>
+        
+        <div class="polaroid">
+            <img src="photos/IMG-20260707-WA0018.jpg" alt="">
+            <div class="caption"> Kucağımda yatıonnn </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/20260626_124233.jpg" alt="">
+            <div class="caption">Yine otebisss </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/20260716_132629.jpg" alt="">
+            <div class="caption">Bu nere emin değilimmm</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/20260716_134331.jpg" alt="">
+            <div class="caption">Vapurrr </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/20260729_131149.jpg" alt="">
+            <div class="caption">Metrooo </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/IMG-20260707-WA0037.jpg" alt="">
+            <div class="caption">Kadıköyde oyun oynuodukkk </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/SS_2026-03-16_23.36.35.png" alt="">
+            <div class="caption">Burda henüz sevgilim değilsin ama olsun </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
